@@ -22,7 +22,7 @@ export default function App() {
   return (
     <>
       <Category categories={categories} filterItems={filterItems} />
-      <div className="main my-3 mx-auto max-w-[1170px] grid justify-center gap-4 w-[90vw] grid-cols-2 p-5">
+      <div className="main my-3 mx-auto max-w-[1170px]  justify-center gap-4 w-[90vw] grid grid-cols-1 md:grid-cols-2 p-5">
         {items.map((content) => {
           return <MenuList {...content} />;
         })}
